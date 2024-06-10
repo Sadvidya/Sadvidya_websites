@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Achievements</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS file -->
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .section-title {
+            font-size: 36px;
+            color: #333;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .gallery-item {
+            position: relative;
+            width: calc(25% - 20px); /* 4 items per row, adjust as needed */
+            margin-bottom: 20px;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .gallery-item-title {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            right: 10px;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        @media (max-width: 992px) {
+            .gallery-item {
+                width: calc(33.33% - 20px); /* 3 items per row for medium screens */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .gallery-item {
+                width: calc(50% - 20px); /* 2 items per row for small screens */
+            }
+        }
+
+        @media (max-width: 576px) {
+            .gallery-item {
+                width: 100%; /* 1 item per row for extra small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="section-title">Academic Achievements</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300" alt="Achievement 1">
+                <div class="gallery-item-title">Achievement Title 1</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300" alt="Achievement 2">
+                <div class="gallery-item-title">Achievement Title 2</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300" alt="Achievement 3">
+                <div class="gallery-item-title">Achievement Title 3</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300" alt="Achievement 4">
+                <div class="gallery-item-title">Achievement Title 4</div>
+            </div>
+            <!-- Add more gallery items as needed -->
+        </div>
+    </div>
+</body>
+</html>
